@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins Regular";
+    color: whitesmoke;
+    outline: none;
+}
+
+body{
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    letter-spacing: 5px;
+    font-size: 5vw;
+    white-space: none;
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container > div{
+    margin: 20px;
+}
+
+.container > div input{
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: 80px;
+    color: black;
+    text-align: center;
+}
+
+
+/* *********************************** */
+
+table{
+    transition: display 1s;
+    border-collapse: collapse;
+}
+
+table thead tr th{
+    font-weight: 550;
+    border: 1px solid whitesmoke;
+    padding: 10px 0;
+    width: 170px;
+}
+
+table tbody tr td{
+    text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 10px 0;
+    width: 150px;
+}
+
+table tbody tr td:not(:nth-child(1)){
+    font-family: "Digital-7";
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 10px 0;
+    width: 150px;
+}
+
+table tfoot tr td:nth-child(4),
+table tfoot tr td:nth-child(5),
+table tfoot tr td:nth-child(6)
+{
+    text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 10px 0;
+    width: 150px;
+    height: 45px;
+}
+
+td:nth-child(1), th{
+    color: #FBB666;
+}
+
+tfoot td{
+    font-family: "Digital-7";
+    color: #00C6CF;
+    font-size: 20px;
+}
+
+button{
+    margin: 40px 0;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background: #00C896;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+}
+
+button:hover{
+    background: whitesmoke;
+    color: #00C896;
+}
+
+/* *************************************** */
+
+.ticket{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: whitesmoke;
+    padding: 20px 10px;
+    transition: .4s;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.ticket > h2{
+    text-align: center;
+    font-family: 'Digital-7';
+    color: #222;
+    width: 500px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.ticket h3{
+    color: #222;
+}
+
+
+.ticket h4{
+    color: #222;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.ticket .nom{
+    color: #222;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.ticket .up{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.ticket .up::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    top: 30px;
+    right: 10px;
+    border-bottom: 1px solid #222;
+}
+
+.ticket .up .pa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0 20px;
+}
+
+.ticket .art{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 7px;
+}
+
+.ticket .art .afa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 62%;
+    padding: 0 20px;
+}
+
+.ticket .nb,
+.ticket .nb2,
+.ticket .mode
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    padding-right: 25px;
+}
+
+.ticket .nb{
+    margin-top: 20px;
+}
+
+.ticket .nb2{
+    margin-bottom: 20px;
+}
+
+.ticket .nb h2,
+.ticket .nb2 h2,
+.ticket .mode h2
+{
+    text-align: center;
+    color: #222;
+    font-size: 17px;
+}
+
+.ticket .mode h2 span{
+    font-weight: 300;
+    color: #222;
+    margin-left: 5px;
+    font-style: italic;
+}
+
+.ticket .ambany{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ticket .u{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket .u h4{
+    margin: 3px 0;
+    text-align: center;
+}
+
+.ticket .reme{
+    margin-top: 20px;
+    font-family: 'Digital-7';
+    font-size: 25px;
+}
